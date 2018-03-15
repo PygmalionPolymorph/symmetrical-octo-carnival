@@ -1,0 +1,85 @@
+/* Reset */
+
+body {
+	margin: 0;
+	width: 100%;
+}
+
+
+
+/* Helpers */
+
+.transparent {
+	opacity: 0;
+}
+
+/* Main Sections / Layout */
+
+#controls {
+	position:fixed;
+	background-color: white;
+}
+
+#wall {
+	width: 100%;
+}
+
+
+
+/* Columns and Images */
+
+.column {
+	width: 100%;
+	transition: all .3s ease;
+	float:left;
+}
+
+.column img {
+	width: 100%;
+	transition: all .3s ease;
+	object-fit: cover;
+	box-sizing: border-box;
+	margin-bottom: -5px;
+}
+
+.focus {
+	position: fixed;
+	height: auto;
+	width: auto;
+	max-width: 50%;
+	max-height: 75%;
+	left: 25%;
+	top: 12.5%;
+}
+
+.backdrop {
+	position: fixed;
+	width: 100vh;
+	height: 100vw;
+	background-color: white;
+	opacity: .2;
+}
+
+@media screen and (min-width: 600px) {
+	.column {
+		width: 50%;
+	}
+}
+
+@media screen and (min-width: 720px) {
+	.column {
+		width: 33.3%;
+	}
+}
+
+@media screen and (min-width: 960px) {
+	.column {
+		width: 25%;
+	}
+}
+
+@media screen and (min-width: 1280px) {
+	.column {
+		width: 20%;
+	}
+}
