@@ -1,0 +1,41 @@
+body {
+  height: 100%;
+}
+
+div {
+  perspective: 3000px;
+  perspective-origin: center;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+
+  span {
+    width: 20px;
+    height: 40px;
+    display: inline-block;
+    animation: rotate 2s infinite linear;
+    background-color: #5fc683;
+
+    &:nth-child(3n+1) {
+      animation-delay: .2s;
+    }
+    &:nth-child(3n+2) {
+      animation-delay: .4s;
+    }
+    & + span {
+      margin-left: 5px;
+    }
+  }
+}
+
+
+@keyframes rotate {
+  from {
+    transform: rotateX(0deg);
+  }
+  to {
+    transform: rotateX(360deg);
+  }
+}

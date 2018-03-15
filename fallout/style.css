@@ -1,0 +1,56 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background-image:radial-gradient(#131613 0, #040704 100%);
+}
+
+
+.blendmode {
+  height: 33.75vw;
+  width: 60vw;
+  background-size: cover;
+  background-image: url(Fallout-4-62.jpg),
+  -moz-linear-gradient(90deg, white 0%, #888 60%, white 65%, #333 66%, white 67%, #888 69%, #888 80%, white 100%);
+  background-blend-mode: hard-light;
+  animation: background 0.7s infinite linear, blur 7s infinite ease;
+  background-position: 0 0, 0 510;
+  filter: grayscale(0.2) blur(0px);
+  border-radius: 40%/17%;
+  box-shadow: 0 0 100px;
+}
+
+@keyframes background {
+  from {
+    background-position: 0 0, 0 0;
+  }
+  to: {
+    background-position: 0 0, 0 510;
+  }
+}
+
+@keyframes blur {
+  0% {
+    filter: blur(0.2px);
+  }
+  30% {
+    filter: blur(0.5px);
+  }
+  40% {
+    filter: blur(2px);
+  }
+  50% {
+    filter: blur( 3px);
+  }
+  55% {
+    filter: blur(0.2px);
+  }
+  70% {
+    filter: blur(1px);
+  }
+  100% {
+    filter: blur(0.2px);
+  }
+}

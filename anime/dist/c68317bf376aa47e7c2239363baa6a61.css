@@ -1,0 +1,9 @@
+body {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+img {
+  width: 300px;
+  margin: 0 auto -1px auto;
+}

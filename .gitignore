@@ -1,0 +1,5 @@
+node_modules
+.cache
+
+anime/dist
+parcel/dist
